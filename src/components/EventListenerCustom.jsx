@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react'
 function EventListenerCustom() {
 
     // estados para alto y ancho del viewport
-    const [ viewportWidth, setViewportWidth ] = useState(10)
-    const [ viewportHeight, setViewportHeight ] = useState(10)
+    const [ viewportWidth, setViewportWidth ] = useState(window.innerWidth)
+    const [ viewportHeight, setViewportHeight ] = useState(window.innerHeight)
 
 
     // efecto cada que cambia cuando se afecta el ancho o alto del viewport
